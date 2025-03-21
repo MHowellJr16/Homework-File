@@ -1,0 +1,117 @@
+/* 
+
+GENERIC 
+
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 96px 0;
+}
+
+.row {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* 
+
+NAVIGATION 
+
+*/
+
+.nav__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    padding-top: 20px;
+}
+
+.nav__link {
+    margin-left: 25px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1.25;
+}
+
+.log-in {
+    margin-left: 30px;
+}
+
+.nav__link--primary {
+    margin-left: 30px;
+    padding: 10px 32px;
+    background: green;
+    color: white;
+    border-radius: 500px;
+    border: none;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}
+
+.nav__link--primary:hover {
+    text-decoration: none;
+    background: white;
+    color: green;
+    border: 2px solid green;
+    transition: all 300ms ease;
+}
+
+/* 
+
+HEADER 
+
+*/
+
+.header__description {
+    width: 50%;
+}
+
+header .row {
+    display: flex;
+}
+
+.header__description--title {
+    margin-bottom: 15px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.header__description--para {
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+.header__email {
+    width: 100%;
+    max-width: 400px;
+    height: 45px;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.header__email--input {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 500px;
+    border: 1px solid gray;
+    padding: 15px;
+}
+
+.header__email--btn {
+    height: 100%;
+    padding: 0 15px;
+    border-radius: 20px;
+    border: none;
+}
