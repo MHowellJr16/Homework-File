@@ -115,3 +115,49 @@ header .row {
     border-radius: 20px;
     border: none;
 }
+
+/* 
+
+MAIN
+
+*/
+
+#features .row__narrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__title {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 16px 0;
+}
+
+#features .about__para {
+    text-align: center;
+    max-width: 576px;
+}
+
+.about__para {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.language {
+    width: calc(100% / 3);
+}
+
+.languages {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.language__row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 24px;
+}
