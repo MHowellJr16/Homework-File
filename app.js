@@ -30,3 +30,62 @@ console.log(farenheight)
  * ****** EQUALITY *******
  */
 // Use Console Log
+/**
+ * ****** IF/ELSE STATEMENTS *******
+ */
+let subsribed = true
+if (subsribed == true) {
+    console.log('show the video')
+}
+else {
+    console.log('create an account')
+}
+let newSubsribed = false 
+if (newSubsribed == true) {
+    console.log('show the video')
+}
+else {
+    console.log('create an account')
+}
+let bestSusbcribed = true
+let bestLoggedIn = false
+if (bestSusbcribed === true) {
+    console.log('show the video')
+}
+else if (bestLoggedIn === true) {
+    console.log('tell the user to upgrade account')
+}
+else {
+    console.log('tell the user to log into account')
+}
+let cash = 50
+let price = 40
+if (cash > price) {
+    console.log('You paid extra, here is ' + (cash-price) + 'dollars')
+}
+else if (cash < price) {
+    console.log('You still owe!')
+}
+else {
+    console.log("Thank you for your service!")
+}
+cash = 700
+price = 600
+let storeIsOpen = true
+if ("cash >= price && storeIsOpen") { // If statement MUST HAVE "Truthy" Value!!
+    console.log('Print Receipt!')
+} 
+else {
+    console.log('false')
+}
+let val = "8"
+if (val) {
+    console.log('Truth Value ' + !!val)
+}
+else {
+    console.log('False Value ' + !!val)
+}
+let hot = true
+hot ? console.log('Weather is hot!') : console.log('Weather is cold!')
+let newHot = false
+newHot ? console.log('Weather is hot!') : console.log('Weather is cold!')
