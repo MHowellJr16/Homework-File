@@ -89,3 +89,52 @@ let hot = true
 hot ? console.log('Weather is hot!') : console.log('Weather is cold!')
 let newHot = false
 newHot ? console.log('Weather is hot!') : console.log('Weather is cold!')
+/**
+ * ****** LOOPS *******
+ */
+let count = 1
+while (count < 3) {
+    console.log('this ran')
+    count = count + 1
+}
+/**
+ * REMEMBER: "SCI": 
+ * 1. SET: The INITIAL NUMBER("i=0")
+ * 2. COUNT: How MANY TIMES is the object looping
+ * 2. INCREMENT: BY HOW MANY TIMES is the object looping 
+ *    i.e. by 1(i++) by 2(i+=2)
+ */
+/** 
+for (let i = 0; i < 3; i++) { 
+    console.log(i)
+}
+for (let i = 0; i <= 20; i+=2) { 
+    console.log(i)
+}
+*/
+// PROBLEM SET:
+for(let i = 1; i <=20; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log(i + " -> FrontEnd Simplified")
+    }
+    else if (i % 3 === 0) {
+        console.log(i + " -> FrontEnd")
+    }
+    else if (i % 5 === 0) {
+        console.log(i + " -> Simplified")
+    }
+    else {
+        console.log(i + " -> " + i)
+    }
+}
+// PROBLEM SET: 2
+const newString = "FrontEnd Simplified"
+for (let i = 0; i <= newString.length; i++) {
+    /**
+     * Use "item[i]" when printing out 
+     * ITEMS instead of NUMBERS 
+     * i.e. the letters in a string
+     */
+    console.log(newString[i]) 
+}
+// Start FUNCTIONS
