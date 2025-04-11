@@ -186,3 +186,17 @@ const bestOperation = (celsius) => {
     return celsius * 1.8 + 32
 }
 console.log(bestOperation(10))
+/**
+ * ****** ARRAYS *******
+ */
+// "[]" are how you DEFINE ARRAYS
+let arr = [20, 30, 40] 
+console.log(arr) 
+// You access items in array SAME WAY as before
+console.log(arr[0])
+/**
+ * Calling LAST ELEMENT
+ * // use "___.lenght-1" to signal LAST ELEMENT in array
+ */
+console.log(arr[arr.length-1]) 
+// TIME STAMP: 3:09
