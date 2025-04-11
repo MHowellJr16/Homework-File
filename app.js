@@ -138,3 +138,50 @@ for (let i = 0; i <= newString.length; i++) {
     console.log(newString[i]) 
 }
 // Start FUNCTIONS
+/**
+ * ****** FUNCTIONS *******
+ */
+// FUNCTION DEFINITION
+function welcomePersonToFES() {
+    console.log('Welcome to FES, Mark')
+}
+// CALLING FUNCTION
+welcomePersonToFES()
+function bestWelcome(name) { // item inside parentheses is called PARAMATER
+    console.log(name)
+}
+// When CALLING PARAMATER, you must put what you want INSIDE PARENTHESES 
+bestWelcome('Mark') 
+function newerWelcome(name) {
+    console.log('Welcome to FES, ' + name)
+}
+newerWelcome('Mark')
+function companyWelcome(firstName, lastName) {
+    console.log('Welcome to FES ' + firstName + lastName)
+}
+/**
+ * Funtions are best used with RETURN STATEMENTS
+ * After Return, NOTHING after function wil work
+ */
+companyWelcome('Mark','Howell')
+function sumOfTwoNumbers(num1, num2) {
+    return num1 + num2
+}
+console.log(sumOfTwoNumbers(10,10))
+function convertCelsiusToFarenheight(celsius) {
+    let farenheight = celsius * 1.8 + 32
+    return farenheight 
+}
+console.log(convertCelsiusToFarenheight(0))
+// Can also write on ONE LINE OF CODE
+function bestFormula(celsius) {
+    return celsius * 1.8 + 32
+}
+console.log(bestFormula(0))
+// ARROW FUNCTIONS
+/**
+ * With Arrow Functions, ALWAYS USE "CONST"
+ */
+const bestOperation = () => {
+
+}
