@@ -178,10 +178,11 @@ function bestFormula(celsius) {
     return celsius * 1.8 + 32
 }
 console.log(bestFormula(0))
-// ARROW FUNCTIONS
+// Second Way of Defining Function: ARROW FUNCTIONS and CONST
 /**
  * With Arrow Functions, ALWAYS USE "CONST"
  */
-const bestOperation = () => {
-
+const bestOperation = (celsius) => {
+    return celsius * 1.8 + 32
 }
+console.log(bestOperation(10))
