@@ -200,3 +200,8 @@ console.log(arr[0])
  */
 console.log(arr[arr.length-1]) 
 // TIME STAMP: 3:09
+console.log(arr.length)
+// To ADD to array, use ".PUSH"
+arr.push(200)
+console.log(arr)
+// TIME STAMP: 5:30
