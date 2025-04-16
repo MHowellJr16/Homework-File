@@ -205,3 +205,61 @@ console.log(arr.length)
 arr.push(200)
 console.log(arr)
 // TIME STAMP: 5:30
+/**
+ * CALL BACK FUNCTION:
+ * (*******  () => {}  ********)
+ */
+// When FILTERING, declare a NEW ARRAY
+let newArr = arr.filter((element) => {
+    console.log(element)
+    return true // MUST "return true"
+  } 
+)
+console.log(newArr)
+let bestArr = arr.filter((element) => {
+    if (element < 50) {
+        console.log(element)
+        return true
+    }
+}) 
+/** SHORT WAY 
+ * NO 'RETURN'
+ * DO NOT need "()" OR "{}"
+ * Just need "=>"
+ * If you are returnin ONE LINE OF CODE
+*/
+let lastArr = arr.filter(element => element > 50)
+console.log(lastArr)
+// Filtering out grade excercise:
+let grades = ["A+", "A", "FAIL"]
+let goodGrades = grades.filter((element) => {
+   console.log(element)
+   if (element !== "FAIL") {
+        return true
+   }
+})
+console.log(goodGrades)
+// SHORT WAY:
+let bestGrades = grades.filter(element => element !== "FAIL")
+console.log(bestGrades)
+let otherGrades = ["A+", "A", "A-", "B+", "B", "B-", "C", "FAIL"]
+console.log(otherGrades.length)
+for (let i = 0; i <= otherGrades.length; i++) {
+    /**
+     * "console.log(i)" WILL LIST numbers
+     * i.e. "1, 2, 3, 4"
+     * "console.log(otherGrades[i])" WILL LIST **ITEMS**
+     * i.e. "A+, A-", etc.
+     */
+    console.log(otherGrades[i])
+}
+// Looping Excercise:
+let marksGrades = ["A", "A", "A", "FAIL", "FAIL"]
+let marksGoodGrades = []
+for (let i = 0; i <= marksGrades.length; i++) {
+    if (marksGrades[i] !== "FAIL") {
+        marksGoodGrades.push(marksGrades[i])
+    }
+}
+console.log(marksGoodGrades)
+// TIME STAMP: 22:51
