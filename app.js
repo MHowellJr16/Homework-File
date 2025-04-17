@@ -263,3 +263,69 @@ for (let i = 0; i <= marksGrades.length; i++) {
 }
 console.log(marksGoodGrades)
 // TIME STAMP: 22:51
+/** MAPPING:
+ * Very Similar to FILTER: 
+ * Callback: "() => {}, "
+ * With PARAMATER in parentheses: "(element)"
+ */
+let markArr = [1, 3, 67, 89]
+let secondMarkArr = markArr.map((element) => {
+    console.log(element)
+})
+// Difference is you can CHANGE ELEMENTS:
+/**
+ * With returns: You MUST do CONSOLE.LOG
+ * OUTSIDE of the map:
+ */
+let thirdMarkArr = markArr.map((element) => {
+    console.log(element)
+    return undefined
+})
+console.log(thirdMarkArr)
+// ONE LINE of code:
+let fourthMarkArr = markArr.map(element => "Daddy")
+console.log(fourthMarkArr)
+// Turn Array of Dollars into Cents:
+let dollars = [1, 3, 5, 8]
+let cents = dollars.map((element) => {
+    console.log(element)
+    return element * 100
+})
+console.log(cents)
+// ONE LINE of code:
+let newCents = dollars.map(element => element * 100)
+console.log(newCents)
+// Using FOR LOOP: 
+let bestDollars = [3, 4, 7]
+let bestCents = []
+for (let i = 0; i < bestDollars.length; i++) {
+    bestCents.push(bestDollars[i] * 100)
+}
+console.log(bestCents)
+/**
+ * ****** OBJECTS *******
+ */
+/** Used to store MULTIPLE VARIABLES 
+ * in ONE VARIABLE
+ */
+let userFirstName = "Mark"
+let userLastName = "Howell"
+let userDiscordID = "Mark Howell 001"
+let userSubsriptionStatus = "VIP"
+/**Instead of declaring EACH user:
+ * i.e. "User FIRST NAME, LAST NAME, etc."
+ * we declare ONE USER: and store all info 
+ * in the OBJECT:
+ */
+let user = {
+    username: "Mark",
+    email: "MHowellJr16@gmail.com",
+    subsrcriptionStatus: "VIP",
+    discordID: "Mark Howell 001"
+}
+// CALLING the OBJECT:
+console.log(user.discordID)
+// Can also access SINGLE ITEMS
+// Just like STRINGS:
+console.log(user.discordID[0])
+// TIME STAMP: 2:29
