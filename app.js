@@ -321,7 +321,8 @@ let user = {
     username: "Mark",
     email: "MHowellJr16@gmail.com",
     subsrcriptionStatus: "VIP",
-    discordID: "Mark Howell 001"
+    discordID: "Mark Howell 001",
+    lessonsCompleted: [0, 1]
 }
 // CALLING the OBJECT:
 console.log(user.discordID)
@@ -329,3 +330,83 @@ console.log(user.discordID)
 // Just like STRINGS:
 console.log(user.discordID[0])
 // TIME STAMP: 2:29
+console.log(user.subsrcriptionStatus)
+console.log(user.lessonsCompleted)
+// Can use FILER and MAP methods:
+console.log(user.lessonsCompleted.map(elem => elem * 2))
+/**OBJECTS AS ARRAYS:
+ * Use "[]" to store EVERYTHING(like array)
+ * Then use "{}" to store each OBJECT
+ */
+let newUser = [{
+    username: "Mark",
+    email: "MHowellJr16@gmail.com",
+    password: "Witness2025",
+    subsrcriptionStatus: "VIP",
+    discordID: "Mark Howell 001",
+    lessonsCompleted: [0, 1]
+},
+{
+    username: "Gloria",
+    email: "GSmith16@gmail.com",
+    password: "MyKing2025",
+    subsrcriptionStatus: "VIP",
+    discordID: "Gloria Smith 001",
+    lessonsCompleted: [0, 1, 2, 3, 4]
+}
+]
+/**
+ *  Call ITEM in Array of Objects,
+ * Just like you would a regular array
+ * "newUser[0]"
+ */
+console.log(newUser[0])
+// Then you can call ITEM in GIVEN object in array:
+console.log(newUser[0].discordID)
+console.log(newUser[1].lessonsCompleted.map(elem => elem * 2))
+// Log in Function:
+function logIn(email, password) {
+    for(let i = 0; i < newUser.length; i++) {
+    console.log("this ran")
+    if (newUser[i].email === email) {
+    console.log(email, password)
+    if (newUser[i].password === password) {
+        console.log("log the user in!")
+    }
+    else {
+        console.log("password is incorrect")
+    }
+    return
+  }
+}
+    console.log("information is not correct")
+}
+logIn("MHowellJr16@gmail.com", "Witness2025")
+// Register Function:
+function register(
+     username,
+     email, 
+     password, 
+     subsrcriptionStatus, 
+     discordID, 
+     lessonsCompleted) {
+    let marriageUser = {
+        username: username,
+        email: email,
+        password: password,
+        subsrcriptionStatus: subsrcriptionStatus,
+        discordID: discordID,
+        lessonsCompleted: lessonsCompleted
+    }
+    newUser.push(marriageUser)
+}
+register(
+    'Gloria Howell', 
+    "GHowell@gmail.com", 
+    'Together2026',
+     "VIP", 
+    "Gloria Howell 002"
+    [0, 1, 2, 3, 4, 5, 6]
+)
+console.log(newUser)
+// TIME STAMP: 17:10
