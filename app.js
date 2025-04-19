@@ -383,30 +383,17 @@ function logIn(email, password) {
 }
 logIn("MHowellJr16@gmail.com", "Witness2025")
 // Register Function:
-function register(
-     username,
-     email, 
-     password, 
-     subsrcriptionStatus, 
-     discordID, 
-     lessonsCompleted) {
-    let marriageUser = {
-        username: username,
-        email: email,
-        password: password,
-        subsrcriptionStatus: subsrcriptionStatus,
-        discordID: discordID,
-        lessonsCompleted: lessonsCompleted
-    }
+function register(marriageUser) {
     newUser.push(marriageUser)
 }
-register(
-    'Gloria Howell', 
-    "GHowell@gmail.com", 
-    'Together2026',
-     "VIP", 
-    "Gloria Howell 002"
-    [0, 1, 2, 3, 4, 5, 6]
+register({    
+    username: 'Gloria Howell', 
+    email: "GHowell@gmail.com", 
+    password: 'Together2026',
+    subsrcriptionStatus: "VIP", 
+    discordID: "Gloria Howell 002",
+    lessonsCompleted: [0, 1, 2, 3, 4, 5, 6]
+}
 )
 console.log(newUser)
 // TIME STAMP: 17:10
